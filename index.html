@@ -14,12 +14,13 @@
         <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
-<body>
+<body id="background">
 
     <div class="jumbotron">
         <h1 class="display-4">Weather Dashboard</h1>
         <p class="lead">A simple dashboard to see weather around the world!</p>
         <hr class="my-4">
+    </div>
 
         <div class="container">
             <div class="row">
@@ -29,13 +30,13 @@
                             <label for="cityInput">Search for a City</label>
                             <input type="city" class="form-control" id="citySearch" placeholder="CITY">
                         </div>
-                        <button type="submit" class="btn btn-primary" id="searchButton">Search</button>
+                        <button type="submit" class="btn btn-success" id="searchButton">Search</button>
                     </form>
                     <br>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
-                                <h3 class="card-title" id="cityTitle"></h3>
+                                <h3 class="card-title" id="cityTitle">Search for a City Above</h3>
                                 <br>
                                 <p class="card-subtitle" id="temperature">Temperature: </p>
                                 <br>
@@ -45,7 +46,6 @@
                                 <br>
                                 <p class="card-subtitle" id="uv">UV Index: </p>
                                 <br>
-
                             </div>
                         </div>
                     </div>
@@ -54,11 +54,16 @@
                 <div class="col-md-6 col-sm-12">
                     <br>
                     <ul class="list-group" id="commoncities">
-                        <li class="list-group-item"><button class="btn btn-primary" id="LA">Los Angeles</button></li>
-                        <li class="list-group-item"><button class="btn btn-primary" id="DEN">Denver</button></li>
-                        <li class="list-group-item"><button class="btn btn-primary" id="NYC">New York</button></li>
-                        <li class="list-group-item"><button class="btn btn-primary" id="CHI">Chicago</button></li>
-                        <li class="list-group-item"><button class="btn btn-primary" id="NOLA">New Orleans</button></li>
+                        <li class="list-group-item"><h4>Choose a City</h4></li>
+                        <li class="list-group-item"><button value="los angeles" class="btn btn-primary select" id="LA">Los Angeles</button></li>
+                        <li class="list-group-item"><button value="denver" class="btn btn-primary" id="DEN">Denver</button></li>
+                        <li class="list-group-item"><button value="new york" class="btn btn-primary" id="NYC">New York</button></li>
+                        <li class="list-group-item"><button value="chicago" class="btn btn-primary" id="CHI">Chicago</button></li>
+                        <li class="list-group-item"><button value="new orleans" class="btn btn-primary" id="NOLA">New Orleans</button></li>
+                        <li class="list-group-item"><button value="dallas" class="btn btn-primary" id="DAL">Dallas</button></li>
+                        <li class="list-group-item"><button value="san francisco" class="btn btn-primary" id="SAN">San Francisco</button></li>
+                        <li class="list-group-item"><button value="atlanta" class="btn btn-primary" id="ATL">Atlanta</button></li>
+
                     </ul>
 
                 </div>
@@ -135,13 +140,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
 
-
-
-
-    
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -153,8 +153,10 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
         <!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/selectcity.js"></script>
 </body>
 
 </html>
