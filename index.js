@@ -7,7 +7,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#citySearch").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -47,7 +47,7 @@ $(document).ready(function () {
                         uvIndex.attr("class", "btn btn-dark")
                     }
                 });
-                const query3 = "api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=" + APIKey;
+                const query3 = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=" + APIKey;
                 $.ajax({
                     url: query3,
                     method: "GET"
@@ -59,7 +59,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#DEN").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -106,7 +106,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#LA").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -123,7 +123,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -153,7 +153,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#NOLA").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -170,7 +170,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -200,7 +200,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#NYC").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -217,7 +217,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -247,7 +247,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#CHI").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -294,7 +294,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#DAL").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -311,7 +311,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -341,7 +341,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#SAN").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -358,7 +358,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
@@ -388,7 +388,7 @@ $(document).ready(function () {
         event.preventDefault();
         var citySearch = $("#ATL").val().trim();
         const APIKey = "536846aa4d5ff654f203c2a1d2b6526a"
-        const query1 = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
+        const query1 = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearch + "&appid=" + APIKey;
         console.log(citySearch);
         console.log(query1);
         //////ajax call
@@ -405,7 +405,7 @@ $(document).ready(function () {
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
-                const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
+                const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
                 $.ajax({
                     url: query2,
                     method: "GET"
