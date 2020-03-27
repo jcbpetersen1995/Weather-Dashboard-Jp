@@ -46,6 +46,11 @@ $(document).ready(function () {
                     if (response.value > 11) {
                         uvIndex.attr("class", "btn btn-dark")
                     }
+                });
+                const query3 = "api.openweathermap.org/data/2.5/forecast?q=" + citySearch + "&appid=" + APIKey;
+                $.ajax({
+                    url: query3,
+                    method: "GET"
                 })
             });
     });

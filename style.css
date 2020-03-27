@@ -10,12 +10,13 @@
 }
 .container {
     background-attachment: fixed;
-    background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/adobe-stock-video-footage/_jcr_content/main-pars/image_309993898/adobe-stock-video-footage_1408x792.jpg")
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/04/21/39/palma-4902795_1280.jpg")
 }
 #background {
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .jumbotron {
     margin-left: 20px;
