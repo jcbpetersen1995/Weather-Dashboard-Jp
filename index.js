@@ -179,6 +179,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -257,6 +258,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -335,6 +337,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -413,6 +416,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -491,6 +495,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -569,6 +574,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
@@ -647,6 +653,7 @@ $(document).ready(function () {
                 $("#temperature").text("Temperature: " + temperature + "° F");
                 $("#humidity").text("Humidity: " + response.main.humidity + "%");
                 $("#wind").text("Wind Speed: " + response.wind.speed + " MPH");
+                $(".icon-image").append($("<img>", {class:"icon-image", src:"https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png"}))
                 var lon = response.coord.lon;
                 var lat = response.coord.lat;
                 const query2 = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + "&lat=" + lat + "&lon=" + lon;
